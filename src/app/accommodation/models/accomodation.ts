@@ -1,7 +1,8 @@
-import {LocationEntityList} from "./locationEntityList";
-import {LocationEntity} from "./locationEntity";
-import {MediaEntityList} from "./mediaEntityList";
-import {RoomEntityList} from "./roomEntityList";
+import {LocationList} from "./locationList";
+import {MediaList} from "./mediaList";
+import {RoomList} from "./roomList";
+import {City} from "./city";
+
 
 export interface Accommodation{
   accommodationClass: string;
@@ -9,16 +10,17 @@ export interface Accommodation{
   accommodationId: number;
   accommodationType: string;
   buildIn: string;
-  locationEntityList: [LocationEntityList];
+  locationEntityList: [LocationList];
   currency: string;
   description: string,
   distanceToCityCenter: number;
-  locationEntity: [LocationEntity];
-  mediaEntityList: [MediaEntityList];
+  location: [Location];
+  mediaList: [MediaList];
   price: number;
   priceFrom: number;
   priceTo: number;
-  roomEntityList: [RoomEntityList];
+  roomList: [RoomList];
   squareMeterPrice: number;
   totalArea: number;
+  city: City;
 }

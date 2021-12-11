@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+.head{
+  height: auto;
+  background-color: #74db98;
+  margin-bottom: 30px;
+}
+
+.headbuttonmain{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btndiv1, .btndiv2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.headbtns{
+  padding: 3px 0.5em;
+  font-size: 2em;
+  width: auto;
+  overflow: hidden;
+  height: 60px;
+  border-radius: 27px;
+  background-color: #74db98;
+  border: 0;
+  display: block;
+
+}
+
+.headbtns:hover{
+  background-color: #e2e751;
+  transition: 0.35s;
+}
+
+.intrtext{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 4em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.selectors{
+  display: flex;
+  justify-content: center;
+}
+
+.slc1, .slc2,{
+  margin: 1rem;
+  font-size: 2em;
+  text-align: center;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 0;
+}
+
+.cityInput {
+  margin: 1rem;
+  font-size: 2em;
+  text-align: center;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 0;
+}
+
+.slcbtn{
+  margin: 1rem;
+  font-size: 1.7em;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
+  background-color: #e2e751;
+  border-radius: 45px;
+  border: 0;
+}
+.slcbtn:hover{
+  background-color: #b16adb;
+  color: white;
+  transition: 0.35s;
+}
+

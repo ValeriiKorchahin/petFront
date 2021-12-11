@@ -1,5 +1,6 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "start": "ng serve --proxy-config proxy.conf.json",
   "compileOnSave": false,
   "compilerOptions": {
     "noImplicitAny": false,
@@ -8,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "strictPropertyInitialization": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,

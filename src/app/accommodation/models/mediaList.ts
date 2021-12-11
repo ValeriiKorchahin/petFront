@@ -1,4 +1,4 @@
-export interface MediaEntityList{
+export interface MediaList {
   mediaId: number;
   url: string
 }
