@@ -10,12 +10,13 @@ import {Accommodation} from "../models/accomodation";
 })
 export class AccommodationComponent implements OnInit {
 
-  accommodation: Accommodation[]
+  accommodation: Accommodation[];
+  page: number = 1;
+  total: number;
 
   constructor(private AccommodationService: AccommodationService) { }
 
   ngOnInit(): void {
-    this.AccommodationService.getAllAccommodation().subscribe(value => this.accommodation = value)
+    this.AccommodationService.getAllAccommodation().subscribe(value => {this.accommodation = value; this.total = value.length})
   }
-
 }

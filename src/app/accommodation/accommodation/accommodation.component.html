@@ -1,1 +1,3 @@
-<app-accommodation-item *ngFor="let accommodation of accommodation" [accommodation]="accommodation"></app-accommodation-item>
+<app-accommodation-item *ngFor="let accommodation of accommodation | paginate: {itemsPerPage: 10, currentPage: page, totalItems: total}" [accommodation]="accommodation" ></app-accommodation-item>
+
+<pagination-controls class="paginationControls" (pageChange)="page = $event"></pagination-controls>

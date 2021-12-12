@@ -12,6 +12,7 @@ export class AccommodationService {
   private baseUrl = 'http://localhost:8080/accommodation';
 
   constructor(private http: HttpClient) { }
+
   getAllAccommodation(): Observable<Accommodation[]>{
    return this.http.get<Accommodation[]>(this.baseUrl)
   };
